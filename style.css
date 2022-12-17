@@ -1,0 +1,152 @@
+ @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+/* navbar */
+
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+}
+.navbar {
+    position: relative;
+    z-index: 999;
+}
+
+
+/* utility */
+
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+.jumbotron {
+    width: 100%;
+    height: 540px;
+    background-color: aquamarine;
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    position: relative;
+    
+
+}
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+
+}
+.jumbotron .display-4 {
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 200;
+    font-size: 62px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+   
+}
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+.jumbotron::after {
+    content: " ";
+    display: block;
+    background-image:linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+
+}
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -80px;
+     z-index: 1;
+    padding: 20px;
+}
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+}
+.working {
+    margin-top: 150px;
+}
+.working h1 {
+    font-size: 67px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.working span {
+    font-weight: bold;
+}
+.working a {
+    width: 150px;
+    border-radius:20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+
+
+
+}
+.working {
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media(min-width: 992px) { 
+    .container-utama{
+        margin: 0 40px;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        
+        margin-right:30px;
+    }
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    }
+
+.jumbotron {
+    margin-top: -75px;
+    text-align: center;
+    height: 640px;
+}
+.jumbotron .display-4 {
+    margin-top: 200px;
+}
+
+
+    .nav-link:hover::after{
+        content: " ";
+        border-bottom: 3px solid rgb(11, 11, 228);
+        display:block;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -9px;
+     
+
+    }
+    .working {
+        text-align: left;
+    }
+}
